@@ -6,27 +6,38 @@ namespace START_UNI
 {
     public abstract class Conta
     {
+
+        public double saldo;
+
+        public void setSaldo(double saldo)
+        {
+            this.saldo = saldo;
+        }
+
+        public double getSaldo()
+        {
+            return saldo;
+        }
         public abstract void Saca(double valor);
     }
 
     public class ContaCorrente : Conta
     {
-        public double Saldo { get; private set; }
+       
 
         public override void Saca(double valor)
         {
-            this.Saldo -= (valor * 0.03);
+            this.saldo -= (valor * 0.03);
         }
        
     }
 
     public class ContaPoupanca : Conta
     {
-        public double Saldo { get; private set; }
 
         public override void Saca(double valor)
         {
-            this.Saldo -= (valor * 0.05 );
+            this.saldo -= (valor * 0.05 );
         }
       
     }

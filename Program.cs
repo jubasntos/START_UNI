@@ -24,14 +24,18 @@ namespace START_UNI
             //    }
             //}
 
-            Pessoa p1 = new Pessoa();
-            p1.setNome("Juliano");
-            p1.setEndereco("Major Joaquim Silverio");
-            p1.setTelefone("15991714721");
+            //Pessoa p1 = new Pessoa();
+            //p1.setNome("Juliano");
+            //p1.setEndereco("Major Joaquim Silverio");
+            //p1.setTelefone("15991714721");
 
-            Console.WriteLine("Nome:" + p1.getNome());
-            Console.WriteLine("Endereco:" + p1.getEndereco());
-            Console.WriteLine("Telefone:" + p1.getTelefone());
+            //Console.WriteLine("Nome:" + p1.getNome());
+            //Console.WriteLine("Endereco:" + p1.getEndereco());
+            //Console.WriteLine("Telefone:" + p1.getTelefone());
+
+            Conta p2 = new ContaCorrente();
+            Conta p3 = new ContaPoupanca();
+
 
         }
     }
